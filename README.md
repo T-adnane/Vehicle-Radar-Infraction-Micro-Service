@@ -41,5 +41,7 @@
 ![getway](https://github.com/T-adnane/Vehicle-Violations-Micro-Service/assets/115072337/0cb1ea45-c53e-4d29-8063-354bd0a4581a)
 # Infractions de test
 ![infractions](https://github.com/T-adnane/Vehicle-Violations-Micro-Service/assets/115072337/55cb9373-6057-44cd-9b8b-10856905f5a1)
-
-
+# Implémentation
+![angular1](https://github.com/T-adnane/Vehicle-Radar-Infraction-Micro-Service/assets/115072337/1dc351c2-1a6b-4873-836c-916ee1d9cbf7)
+![angular2](https://github.com/T-adnane/Vehicle-Radar-Infraction-Micro-Service/assets/115072337/2dc90920-c0d9-49db-b5ac-049991dd9368)
+![angular3](https://github.com/T-adnane/Vehicle-Radar-Infraction-Micro-Service/assets/115072337/9dcf206d-1185-493c-9e01-8a567240c7d1)
