@@ -1,0 +1,42 @@
+
+syntax = "proto3";
+option java_package = "miaad.sd.immatriculationservice.webServices.grpc";
+
+import "google/protobuf/timestamp.proto";
+
+message Proprietaire {
+  int64 id = 1;
+  string nom = 2;
+  google.protobuf.Timestamp dateNaissance = 3;
+  string email = 4;
+}
+
+service ProprietaireGrpcService {
+  rpc getProprietaire(GetProprietaireRequest) returns (GetProprietaireResponse);
+  rpc listProprietaires(GetAllProprietairesRequest) returns (GetAllProprietairesResponse);
+  rpc saveProprietaire(SaveProprietaireRequest) returns (SaveProprietaireResponse);
+}
+
+message GetProprietaireRequest {
+  int64 id = 1;
+}
+
+message GetProprietaireResponse {
+  Proprietaire proprietaire = 1;
+}
+
+message GetAllProprietairesRequest {
+
+}
+
+message GetAllProprietairesResponse {
+  repeated Proprietaire proprietaires = 1;
+}
+
+message SaveProprietaireRequest {
+  Proprietaire proprietaire = 1;
+}
+
+message SaveProprietaireResponse {
+  Proprietaire proprietaire = 1;
+}
