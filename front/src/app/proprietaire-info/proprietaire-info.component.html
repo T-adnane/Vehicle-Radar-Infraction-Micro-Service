@@ -1,0 +1,17 @@
+<div class="container">
+  <table class="table" *ngIf="proprietaire">
+    <thead>
+    <tr>
+      <th>ID</th> <th>Nom</th> <th>Date de Naissance</th> <th>Email</th>    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>{{proprietaire.id}}</td>
+      <td>{{proprietaire.nom}}</td>
+      <td>{{proprietaire.dateNaissance}}</td>
+      <td>{{proprietaire.email}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+

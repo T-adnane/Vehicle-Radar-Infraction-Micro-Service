@@ -1,0 +1,22 @@
+<div class="container">
+  <table class="table" *ngIf="vehicules">
+    <thead>
+    <tr>
+      <th>ID</th> <th>Numéro matricule</th> <th>Marque</th> <th>Puissance fiscale</th> <th>Modele</th> <th>Proprietaire</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let p of vehicules">
+      <td>{{p.id}}</td>
+      <td>{{p.numMatricule}}</td>
+      <td>{{p.marque}}</td>
+      <td>{{p.puissanceFiscale}}</td>
+      <td>{{p.modele}}</td>
+      <td>
+        <button class="btn btn-success" (click)="getProprietaire(p)">{{p.proprietaire.nom}}</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+

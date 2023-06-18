@@ -1,0 +1,17 @@
+<div class="container">
+  <table class="table" *ngIf="proprietaire">
+    <thead>
+    <tr>
+      <th>ID</th> <th>Nom</th> <th>Date de Naissance</th> <th>Email</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of proprietaire">
+        <td>{{p.id}}</td>
+        <td>{{p.nom}}</td>
+        <td>{{p.dateNaissance}}</td>
+        <td>{{p.email}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

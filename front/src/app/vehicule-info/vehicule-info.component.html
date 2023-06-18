@@ -1,0 +1,20 @@
+<div class="container">
+  <table class="table" *ngIf="vehicule">
+    <thead>
+    <tr>
+      <th>ID</th> <th>Numéro matricule</th> <th>Marque</th> <th>Puissance fiscale</th> <th>Modele</th> <th>Proprietaire</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>{{vehicule.id}}</td>
+      <td>{{vehicule.numMatricule}}</td>
+      <td>{{vehicule.marque}}</td>
+      <td>{{vehicule.puissanceFiscale}}</td>
+      <td>{{vehicule.modele}}</td>
+      <td>{{vehicule.proprietaire.nom}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+

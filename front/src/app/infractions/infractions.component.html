@@ -1,0 +1,26 @@
+<div class="container">
+  <table class="table" *ngIf="infractions">
+    <thead>
+    <tr>
+      <th>ID</th> <th>Date</th> <th>Radar ID</th> <th>VehiculeMatricule</th> <th>VehiculeSpeed</th> <th>Max Speed</th> <th>Montant d'infraction</th> <th>Proprietaire d'infraction</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let p of infractions">
+      <td>{{p.id}}</td>
+      <td>{{p.date}}</td>
+      <td>{{p.radarId}}</td>
+      <td>
+        <button class="btn btn-success" (click)="getVehicule(p)">{{p.vehicleMatricule}}</button>
+      </td>
+      <td>{{p.vehicleSpeed}}</td>
+      <td>{{p.radar.maxSpeed}}</td>
+      <td>{{p.infractionAmount}}</td>
+      <td>
+        <button class="btn btn-success" (click)="getProprietaire(p)">{{p.vehicule.proprietaire.nom}}</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
