@@ -4,6 +4,9 @@
 
 
 
+
+# Diagramme de classe
+![Capture](https://github.com/T-adnane/Vehicle-Radar-Infraction-Micro-Service/assets/115072337/9ae38682-f416-4e21-96ae-e35401d95bd6)
 # Immatriculation-service
 ![immatriculationService](https://github.com/T-adnane/Vehicle-Violations-Micro-Service/assets/115072337/d8e5316d-65d2-4eb8-bf38-6485a0885beb)
 #### REST:
