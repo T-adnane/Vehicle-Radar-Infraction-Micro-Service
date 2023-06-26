@@ -5,7 +5,7 @@
 
 
 # Architecture
-![Architecture](https://github.com/T-adnane/Vehicle-Radar-Infraction-Micro-Service/assets/115072337/d7614810-6dc8-4aeb-92fc-38e1759252a0)
+![architecture](https://github.com/T-adnane/Vehicle-Radar-Infraction-Micro-Service/assets/115072337/29c22250-c05a-4241-85a0-24fc55f86784)
 # Diagramme de classe
 ![Capture](https://github.com/T-adnane/Vehicle-Radar-Infraction-Micro-Service/assets/115072337/19e96ea6-e8ce-4279-813c-c96cfa3c54ef)
 # Immatriculation-service
