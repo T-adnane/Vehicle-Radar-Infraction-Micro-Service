@@ -4,7 +4,8 @@
 
 
 
-
+# Architecture
+![WhatsApp Image 2023-06-26 à 10 23 56](https://github.com/T-adnane/Vehicle-Radar-Infraction-Micro-Service/assets/115072337/d7614810-6dc8-4aeb-92fc-38e1759252a0)
 # Diagramme de classe
 ![Capture](https://github.com/T-adnane/Vehicle-Radar-Infraction-Micro-Service/assets/115072337/19e96ea6-e8ce-4279-813c-c96cfa3c54ef)
 # Immatriculation-service
