@@ -1,8 +1,9 @@
 <div class="container">
   <table class="table" *ngIf="vehicules">
     <thead>
+
     <tr>
-      <th>ID</th> <th>Numéro matricule</th> <th>Marque</th> <th>Puissance fiscale</th> <th>Modele</th> <th>Proprietaire</th>
+      <th>ID</th> <th>Numéro matricule</th> <th>Marque</th> <th>Puissance fiscale</th> <th>Modele</th> <th>Proprietaire</th><th><button class="btn btn-success" (click)="goToAddVehicule()">Add Vehicle</button></th>
     </tr>
     </thead>
     <tbody>
@@ -13,7 +14,13 @@
       <td>{{p.puissanceFiscale}}</td>
       <td>{{p.modele}}</td>
       <td>
-        <button class="btn btn-success" (click)="getProprietaire(p)">{{p.proprietaire.nom}}</button>
+        <button class="btn btn-success btn-prop" (click)="getProprietaire(p)">{{p.proprietaire.nom}}</button>
+      </td>
+      <td>
+        <button class="btn btn-primary" (click)="redirectToUpdateVehicule(p.id)"><img class="imageBtn" src="assets/images/update.png"></button>
+      </td>
+      <td>
+        <button class="btn btn-danger" (click)="deleteVehicule(p.id)"><img class="imageBtn" src="assets/images/delete.png"></button>
       </td>
     </tr>
     </tbody>

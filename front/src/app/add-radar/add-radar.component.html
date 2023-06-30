@@ -1,0 +1,28 @@
+<div class="container">
+  <h2>Add Radar</h2>
+  <br>
+  <form (ngSubmit)="onSubmit()" #radarForm="ngForm">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" name="name" [(ngModel)]="radar.name" required>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="maxSpeed">Max Speed</label>
+      <input type="number" class="form-control" id="maxSpeed" name="maxSpeed" [(ngModel)]="radar.maxSpeed" required>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="longitude">Longitude</label>
+      <input type="number" class="form-control" id="longitude" name="longitude" [(ngModel)]="radar.longitude" required>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="latitude">Latitude</label>
+      <input type="number" class="form-control" id="latitude" name="latitude" [(ngModel)]="radar.latitude" required>
+    </div>
+    <br><br>
+    <button type="submit" class="btn btn-primary" [disabled]="!radarForm.valid">Submit</button>
+  </form>
+</div>
+

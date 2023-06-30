@@ -1,0 +1,11 @@
+.background-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.centered-image {
+  max-width: 100%;
+  max-height: 100%;
+}

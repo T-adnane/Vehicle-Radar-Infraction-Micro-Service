@@ -17,7 +17,10 @@
       <td>{{p.radar.maxSpeed}}</td>
       <td>{{p.infractionAmount}}</td>
       <td>
-        <button class="btn btn-success" (click)="getProprietaire(p)">{{p.vehicule.proprietaire.nom}}</button>
+        <button class="btn btn-success btn-prop" (click)="getProprietaire(p)">{{p.vehicule.proprietaire.nom}}</button>
+      </td>
+      <td>
+        <button class="btn btn-danger" (click)="deleteInfraction(p.id)"><img class="imageBtn" src="assets/images/delete.png"></button>
       </td>
     </tr>
     </tbody>

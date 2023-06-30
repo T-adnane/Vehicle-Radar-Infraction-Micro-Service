@@ -1,0 +1,40 @@
+/* Style pour la barre de navigation */
+.navbar {
+  background-color: #00FFFF; /* Couleur de fond */
+  padding: 10px; /* Espacement interne */
+}
+
+.navbar-nav {
+  list-style-type: none; /* Supprime les puces de la liste */
+  display: flex; /* Affiche les éléments en ligne */
+  justify-content: space-between; /* Espace uniformément les éléments */
+  align-items: center; /* Centre les éléments verticalement */
+}
+
+.nav-item {
+  margin-right: 15px; /* Marge à droite entre les éléments */
+}
+
+.logo {
+  margin-right: 200px;
+  margin-left: 50px;
+}
+
+.nav-link {
+  text-decoration: none; /* Supprime la soulignement des liens */
+  color: #333; /* Couleur du texte */
+  font-weight: bold; /* Gras */
+  padding: 5px 10px; /* Espacement interne pour le lien */
+  border-radius: 5px; /* Coins arrondis */
+  transition: background-color 0.3s ease; /* Transition fluide de la couleur de fond */
+}
+
+.nav-link:hover {
+  background-color: #e9ecef; /* Couleur de fond au survol */
+}
+
+.nav-link.active {
+  background-color: #007bff; /* Couleur de fond pour l'élément actif */
+  color: #fff; /* Couleur du texte pour l'élément actif */
+}
+

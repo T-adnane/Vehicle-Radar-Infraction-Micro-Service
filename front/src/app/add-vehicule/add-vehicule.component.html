@@ -1,0 +1,28 @@
+<br><br>
+<div class="container">
+  <h2>Add Vehicule</h2>
+  <br>
+  <form (ngSubmit)="onSubmit()" #vehiculeForm="ngForm">
+    <div class="form-group">
+      <label for="numeroMatricule">Numero Matricule</label>
+      <input type="text" class="form-control" id="numeroMatricule" name="numeroMatricule" [(ngModel)]="vehicule.numeroMatricule" required>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="marque">Marque</label>
+      <input type="text" class="form-control" id="marque" name="marque" [(ngModel)]="vehicule.marque" required>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="puissanceFiscale">Puissance Fiscale</label>
+      <input type="number" class="form-control" id="puissanceFiscale" name="puissanceFiscale" [(ngModel)]="vehicule.puissanceFiscale" required>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="modele">Modele</label>
+      <input type="text" class="form-control" id="modele" name="modele" [(ngModel)]="vehicule.modele" required>
+    </div>
+    <br><br>
+    <button type="submit" class="btn btn-primary" [disabled]="!vehiculeForm.valid">Submit</button>
+  </form>
+</div>

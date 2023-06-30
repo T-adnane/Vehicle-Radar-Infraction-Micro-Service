@@ -2,7 +2,7 @@
   <table class="table" *ngIf="proprietaire">
     <thead>
     <tr>
-      <th>ID</th> <th>Nom</th> <th>Date de Naissance</th> <th>Email</th>
+      <th>ID</th> <th>Nom</th> <th>Date de Naissance</th> <th>Email</th><th><button class="btn btn-success" (click)="goToAddProprietaire()">Add Proprietaire</button></th>
     </tr>
     </thead>
     <tbody>
@@ -11,6 +11,7 @@
         <td>{{p.nom}}</td>
         <td>{{p.dateNaissance}}</td>
         <td>{{p.email}}</td>
+        <td><button class="btn btn-primary" (click)="updateProprietaire(p.id)"><img class="imageBtn" src="assets/images/update.png"></button></td>
       </tr>
     </tbody>
   </table>

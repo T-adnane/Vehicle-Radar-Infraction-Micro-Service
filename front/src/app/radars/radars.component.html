@@ -2,7 +2,7 @@
   <table class="table" *ngIf="radars">
     <thead>
     <tr>
-      <th>ID</th> <th>Nom</th> <th>Max Speed</th> <th>Longitude</th> <th>Latitude</th>
+      <th>ID</th> <th>Nom</th> <th>Max Speed</th> <th>Longitude</th> <th>Latitude</th> <th><button class="btn btn-success" (click)="goToAddRadar()">Add Radar</button></th>
     </tr>
     </thead>
     <tbody>
@@ -12,6 +12,12 @@
       <td>{{p.maxSpeed}}</td>
       <td>{{p.longitude}}</td>
       <td>{{p.latitude}}</td>
+      <td>
+        <button class="btn btn-danger" (click)="deleteRadar(p.id)"><img class="imageBtn" src="assets/images/delete.png"></button>
+      </td>
+      <td>
+        <button class="btn btn-primary" (click)="redirectToUpdateRadar(p.id)"><img class="imageBtn" src="assets/images/update.png"></button>
+      </td>
     </tr>
     </tbody>
   </table>

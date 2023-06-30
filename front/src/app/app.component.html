@@ -1,30 +1,34 @@
+<body>
 <!-- Grey with black text -->
-<nav class="navbar navbar-expand-sm bg-light navbar-light">
+<nav class="navbar navbar-expand-sm">
   <div class="container-fluid">
     <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link active" routerLink="/proprietaires">Proprietaires</a>
+      <li class="nav-item logo">
+        <a class="navbar-brand" routerLink="/home">
+          <img src="assets/images/logo.png" width="50" height="50">
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/vehicules">Vehicules</a>
+        <a class="nav-link" routerLink="/proprietaires" routerLinkActive="active">Proprietaires</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/radars">Radars</a>
+        <a class="nav-link" routerLink="/vehicules" routerLinkActive="active">Vehicules</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/infractions">Infractions</a>
+        <a class="nav-link" routerLink="/radars" routerLinkActive="active">Radars</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">test</a></li>
-          <li><a class="dropdown-item" href="#">test1</a></li>
-          <li><a class="dropdown-item" href="#">test2</a></li>
-        </ul>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/infractions" routerLinkActive="active">Infractions</a>
       </li>
     </ul>
   </div>
 </nav>
+<main>
+
+</main>
+
 <router-outlet>
 
 </router-outlet>
+</body>
+
