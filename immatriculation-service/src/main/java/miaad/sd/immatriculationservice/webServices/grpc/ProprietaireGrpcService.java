@@ -3,6 +3,7 @@ package miaad.sd.immatriculationservice.webServices.grpc;
 import com.google.protobuf.Timestamp;
 import io.grpc.Status;
 import io.grpc.stub.StreamObserver;
+import lombok.AllArgsConstructor;
 import miaad.sd.immatriculationservice.entities.Proprietaire;
 import miaad.sd.immatriculationservice.repositories.ProprietaireRepository;
 import net.devh.boot.grpc.server.service.GrpcService;

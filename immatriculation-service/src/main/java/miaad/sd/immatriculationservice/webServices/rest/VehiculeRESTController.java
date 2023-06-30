@@ -35,13 +35,13 @@ public class VehiculeRESTController {
     }
 
     // Get all vehicles
-    @PostMapping("/vehicules")
+    @PostMapping("/savevehicule")
     public Vehicule saveVehicle(@RequestBody Vehicule vehicule){
         return vehiculeRepository.save(vehicule);
     }
 
     // Update vehicle
-    @PutMapping ("/vehicules/{id}")
+    @PutMapping ("/updatevehicule/{id}")
     public Vehicule updateVehicule(@PathVariable Long id, @RequestBody Vehicule vehicule){
         Vehicule v = vehiculeRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException(String.format("Vehicule %s not found !", id)));
@@ -56,7 +56,7 @@ public class VehiculeRESTController {
     }
 
     // Delete vehicle
-    @DeleteMapping("/vehicules/{id}")
+    @DeleteMapping("/deletevehicule/{id}")
     public void deleteVehicule(@PathVariable Long id){
         vehiculeRepository.deleteById(id);
     }
