@@ -72,4 +72,29 @@ public class RadarRestController {
         infractionRestClient.saveInfraction(newData);
     }
 
+    @PostMapping("/addRadar")
+    public Radar addRadar(@RequestBody Radar radar) {
+        return radarRepository.save(radar);
+    }
+
+    @DeleteMapping("/deleteRadar/{id}")
+    public void deleteRadar(@PathVariable Long id) {
+        radarRepository.deleteById(id);
+    }
+
+    @PutMapping("/updateRadar/{id}")
+    public Radar updateRadar(@PathVariable Long id, @RequestBody Radar updatedRadar) {
+        Radar existingRadar = radarRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException(String.format("Radar %s not found!", id)));
+
+        existingRadar.setName(updatedRadar.getName());
+        existingRadar.setMaxSpeed(updatedRadar.getMaxSpeed());
+        existingRadar.setLongitude(updatedRadar.getLongitude());
+        existingRadar.setLatitude(updatedRadar.getLatitude());
+        existingRadar.setId(updatedRadar.getId());
+
+        return radarRepository.save(existingRadar);
+    }
+
+
 }
