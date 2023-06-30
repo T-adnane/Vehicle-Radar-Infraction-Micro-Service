@@ -131,4 +131,10 @@ public class InfractionRestController {
     }
 
 
+    @DeleteMapping("/deleteInfraction/{id}")
+    public void deleteInfraction(@PathVariable Long id) {
+        infractionRepository.deleteById(id);
+    }
+
+
 }

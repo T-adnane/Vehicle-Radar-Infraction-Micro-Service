@@ -20,23 +20,4 @@ public class InfractionServiceApplication {
         SpringApplication.run(InfractionServiceApplication.class, args);
     }
 
-
-    Random random = new Random();
-
-    @Bean
-    CommandLineRunner start(InfractionRepository infractionRepository) {
-        return args -> {
-            Stream.of("inf1", "inf2", "inf3", "inf4").forEach(i -> {
-                Infraction infraction = Infraction.builder()
-                        .date(new Date())
-                        .radarId(2L)
-                        .radarMaxSpeed(150)
-                        .vehicleMatricule("0d4844e1-39c5-4c9c-862c-d9908bc4fb32")
-                        .infractionAmount(3000)
-                        .vehicleSpeed(200)
-                        .build();
-                infractionRepository.save(infraction);
-            });
-        };
-    }
 }
