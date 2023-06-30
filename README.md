@@ -52,17 +52,6 @@
 # Infractions de test
 ![infractions](https://github.com/T-adnane/Vehicle-Radar-Infraction-Micro-Service/assets/115072337/de84a27b-1cb1-4702-8eca-ae4ba6bb9e65)
 # Implémentation
-![1](https://github.com/T-adnane/Vehicle-Radar-Infraction-Micro-Service/assets/115072337/efeea469-f6da-484a-8101-65d47bba6e96)
-![2](https://github.com/T-adnane/Vehicle-Radar-Infraction-Micro-Service/assets/115072337/cd5cf616-ae3e-4e0e-a2b6-d4ec04f97fb2)
-![3](https://github.com/T-adnane/Vehicle-Radar-Infraction-Micro-Service/assets/115072337/da380041-ecb5-4ffd-b4f2-80d9883b9985)
-Si tu cliques sur le nom du propriétaire.
-![31](https://github.com/T-adnane/Vehicle-Radar-Infraction-Micro-Service/assets/115072337/f231ee10-fea7-4a4c-82f3-9cd61de1a911)
-![4](https://github.com/T-adnane/Vehicle-Radar-Infraction-Micro-Service/assets/115072337/755e103f-da78-4db3-aed7-62511b518ad5)
-![5](https://github.com/T-adnane/Vehicle-Radar-Infraction-Micro-Service/assets/115072337/12f749f1-d654-4377-b341-27ca51b732a7)
-Si tu cliques sur le nom du propriétaire.
-![52](https://github.com/T-adnane/Vehicle-Radar-Infraction-Micro-Service/assets/115072337/546d7dbc-1747-4efa-b971-6177c6caeaa2)
-Si tu cliques sur le numéro du matricule
-![51](https://github.com/T-adnane/Vehicle-Radar-Infraction-Micro-Service/assets/115072337/ba65c57a-8646-4947-8a4d-5c6d1e629bac)
 
 
 https://github.com/T-adnane/Vehicle-Radar-Infraction-Micro-Service/assets/115072337/82ee0d29-cdd8-474f-bbbf-5c7e1e40972b
