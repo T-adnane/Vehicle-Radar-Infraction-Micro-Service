@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: r1
+          uri: lb://IMMATRICULATION-SERVICE
+          predicates:
+            - Path= /api/vehicule/vehicules/**
+            - Path= /api/proprietaire/proprietaires/**
+        - id: r2
+          uri: lb://INFRACTION-SERVICE
+          predicates:
+            - Path= /api/infraction/fullinfractions/**
+        - id: r3
+          uri: lb://RADAR-SERVICE
+          predicates:
+            - Path= /api/radar/radars/**
